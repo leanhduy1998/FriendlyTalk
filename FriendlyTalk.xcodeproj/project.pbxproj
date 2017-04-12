@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */; };
-		2464D28F1E9D4EFB006010C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28E1E9D4EFB006010C7 /* ViewController.swift */; };
+		2464D28F1E9D4EFB006010C7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28E1E9D4EFB006010C7 /* LoginVC.swift */; };
 		2464D2921E9D4EFB006010C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464D2901E9D4EFB006010C7 /* Main.storyboard */; };
 		2464D2941E9D4EFB006010C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2464D2931E9D4EFB006010C7 /* Assets.xcassets */; };
 		2464D2971E9D4EFB006010C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464D2951E9D4EFB006010C7 /* LaunchScreen.storyboard */; };
 		2464D2A21E9D4EFB006010C7 /* FriendlyTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2A11E9D4EFB006010C7 /* FriendlyTalkTests.swift */; };
 		2464D2AD1E9D4EFB006010C7 /* FriendlyTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2AC1E9D4EFB006010C7 /* FriendlyTalkUITests.swift */; };
+		2464D2C11E9DD251006010C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2C01E9DD251006010C7 /* ViewController.swift */; };
+		2464D2C31E9DD6C3006010C7 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2C21E9DD6C3006010C7 /* ChatVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		2464D2891E9D4EFB006010C7 /* FriendlyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2464D28E1E9D4EFB006010C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2464D28E1E9D4EFB006010C7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		2464D2911E9D4EFB006010C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2464D2931E9D4EFB006010C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2464D2961E9D4EFB006010C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		2464D2A81E9D4EFB006010C7 /* FriendlyTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendlyTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2464D2AC1E9D4EFB006010C7 /* FriendlyTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendlyTalkUITests.swift; sourceTree = "<group>"; };
 		2464D2AE1E9D4EFB006010C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2464D2C01E9DD251006010C7 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2464D2C21E9DD6C3006010C7 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */,
-				2464D28E1E9D4EFB006010C7 /* ViewController.swift */,
+				2464D28E1E9D4EFB006010C7 /* LoginVC.swift */,
 				2464D2901E9D4EFB006010C7 /* Main.storyboard */,
 				2464D2931E9D4EFB006010C7 /* Assets.xcassets */,
 				2464D2951E9D4EFB006010C7 /* LaunchScreen.storyboard */,
 				2464D2981E9D4EFB006010C7 /* Info.plist */,
+				2464D2C01E9DD251006010C7 /* ViewController.swift */,
+				2464D2C21E9DD6C3006010C7 /* ChatVC.swift */,
 			);
 			path = FriendlyTalk;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2464D28F1E9D4EFB006010C7 /* ViewController.swift in Sources */,
+				2464D2C31E9DD6C3006010C7 /* ChatVC.swift in Sources */,
+				2464D2C11E9DD251006010C7 /* ViewController.swift in Sources */,
+				2464D28F1E9D4EFB006010C7 /* LoginVC.swift in Sources */,
 				2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
