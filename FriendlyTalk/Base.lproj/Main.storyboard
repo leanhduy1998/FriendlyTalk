@@ -130,9 +130,9 @@
                     <connections>
                         <outlet property="emailTF" destination="QI5-U0-Nen" id="2LG-9N-znQ"/>
                         <outlet property="passwordTF" destination="pt4-M5-hzI" id="mmu-X8-0lk"/>
-                        <segue destination="mgA-qF-BeE" kind="show" id="ube-vQ-Rze"/>
+                        <segue destination="mgA-qF-BeE" kind="show" identifier="ChatVC" id="ube-vQ-Rze"/>
                         <segue destination="lXp-RH-BcL" kind="show" identifier="RegisterVC" id="6By-Np-0sq"/>
-                        <segue destination="PxI-yw-yhw" kind="show" id="Nm1-zZ-AVV"/>
+                        <segue destination="PxI-yw-yhw" kind="show" identifier="RepealBannedVC" id="Nm1-zZ-AVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ar-bB-m8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="390" y="315"/>
+            <point key="canvasLocation" x="1065" y="313"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="HeN-gM-fdz">
@@ -216,7 +216,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S43-Vj-EHJ">
                                 <rect key="frame" x="37" y="617" width="300" height="30"/>
-                                <state key="normal" title="Verify Phone Number"/>
+                                <state key="normal" title="Send SMS to your phone"/>
                                 <connections>
                                     <action selector="verifyBtnPressed:" destination="lXp-RH-BcL" eventType="touchUpInside" id="0LR-Yk-eVA"/>
                                 </connections>
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WvB-oC-mZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-571" y="1098"/>
+            <point key="canvasLocation" x="-572" y="1098"/>
         </scene>
         <!--VerifyVC-->
         <scene sceneID="Ne5-tz-lfR">
@@ -254,12 +254,46 @@
                     <view key="view" contentMode="scaleToFill" id="deG-ea-ocq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your verification number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krg-bu-z4f">
+                                <rect key="frame" x="71.5" y="180" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zat-g8-eoi">
+                                <rect key="frame" x="71" y="241" width="231" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ad-o3-K91">
+                                <rect key="frame" x="71" y="597" width="231" height="30"/>
+                                <state key="normal" title="Verify your phone"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zat-g8-eoi" firstAttribute="trailing" secondItem="krg-bu-z4f" secondAttribute="trailing" id="1Vo-ig-O7X"/>
+                            <constraint firstItem="krg-bu-z4f" firstAttribute="centerX" secondItem="deG-ea-ocq" secondAttribute="centerX" id="D7C-1N-d0z"/>
+                            <constraint firstItem="krg-bu-z4f" firstAttribute="top" secondItem="avj-8f-TXa" secondAttribute="bottom" constant="160" id="FZF-K6-tS6"/>
+                            <constraint firstItem="zat-g8-eoi" firstAttribute="top" secondItem="krg-bu-z4f" secondAttribute="bottom" constant="40" id="Fjh-ZM-Mhd"/>
+                            <constraint firstItem="qp4-zg-hbb" firstAttribute="top" secondItem="3Ad-o3-K91" secondAttribute="bottom" constant="40" id="SNs-zH-FLX"/>
+                            <constraint firstItem="zat-g8-eoi" firstAttribute="leading" secondItem="krg-bu-z4f" secondAttribute="leading" id="c1p-be-vyd"/>
+                            <constraint firstItem="3Ad-o3-K91" firstAttribute="leading" secondItem="zat-g8-eoi" secondAttribute="leading" id="lg4-ZK-k9L"/>
+                            <constraint firstItem="3Ad-o3-K91" firstAttribute="trailing" secondItem="zat-g8-eoi" secondAttribute="trailing" id="sYb-eQ-RRw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <segue destination="mgA-qF-BeE" kind="show" id="fTL-PR-fb7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a6t-mb-OKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236" y="1098"/>
+            <point key="canvasLocation" x="236" y="1097.9010494752624"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fTL-PR-fb7"/>
+    </inferredMetricsTieBreakers>
 </document>

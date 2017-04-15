@@ -40,7 +40,7 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func LoginBtnPressed(_ sender: Any) {
-        if phoneTF.text?.isEmpty ?? true {
+        if emailTF.text?.isEmpty ?? true {
             print("not filled")
         }
         else if passwordTF.text?.isEmpty ?? true {
@@ -70,7 +70,7 @@ class LoginVC: UIViewController {
                                 return
                             }
                             // if failed, already return. When not failed, continue
-                            performSegue(withIdentifier: "RegisterVC", sender: Any?)
+                            self.performSegue(withIdentifier: "RegisterVC", sender: nil)
                         }
                     }
                     
@@ -83,16 +83,20 @@ class LoginVC: UIViewController {
                 let refHandle = ref.observeSingleEvent(of: .value, with: { (snapshot) in
                     let phoneNumber = snapshot.value as? PhoneNumber
                     let banned = phoneNumber?.banned
+                    let number = phoneNumber?.phoneNumber
                     
-                    if banned ?? true {
-                        performSegue(withIdentifier: "RepealBanned", sender: <#T##Any?#>)
+                    if number == nil {
+                        self.performSegue(withIdentifier: "RegisterVC", sender: nil)
+                    }
+                    else {
+                        if banned ?? true {
+                            self.performSegue(withIdentifier: "RepealBannedVC", sender: nil)
+                        }
+                        else {
+                            self.performSegue(withIdentifier: "ChatVC", sender: nil)
+                        }
                     }
                 })
-
-                
-                let phoneNumber = PhoneNumber(phoneNumber: "",banned: false)
-                
-        //
             }
         }
         

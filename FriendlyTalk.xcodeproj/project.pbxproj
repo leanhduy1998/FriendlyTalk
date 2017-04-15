@@ -129,8 +129,8 @@
 		2464D28B1E9D4EFB006010C7 /* FriendlyTalk */ = {
 			isa = PBXGroup;
 			children = (
-				248185BC1EA2B5790017A12C /* Register */,
 				248185841EA1485D0017A12C /* Login */,
+				248185BC1EA2B5790017A12C /* Register */,
 				248185BF1EA2B5F90017A12C /* Chat */,
 				248185BB1EA2A3210017A12C /* Models */,
 				2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */,
@@ -678,7 +678,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Habits.FriendlyTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FriendlyTalk-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -702,7 +702,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Habits.FriendlyTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "FriendlyTalk-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
