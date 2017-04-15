@@ -10,6 +10,60 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Repeal Banned-->
+        <scene sceneID="fEZ-Ao-Gcv">
+            <objects>
+                <viewController id="PxI-yw-yhw" customClass="RepealBanned" customModule="FriendlyTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kkd-a0-EcN"/>
+                        <viewControllerLayoutGuide type="bottom" id="5uc-Xs-Ala"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p13-d3-qco">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are banned. To repeal, please type in your repeal statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc4-E5-QeM">
+                                <rect key="frame" x="35" y="28" width="305" height="126"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="126" id="Cw1-nz-doU"/>
+                                    <constraint firstAttribute="width" constant="305" id="ZGA-xR-l0B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-Sl-DOa">
+                                <rect key="frame" x="24" y="617" width="327" height="30"/>
+                                <state key="normal" title="Send repeal form"/>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your respond" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6py-1q-5kW">
+                                <rect key="frame" x="35" y="174" width="305" height="423"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.70822538860103634" green="0.70822538860103634" blue="0.70822538860103634" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kc4-E5-QeM" firstAttribute="centerX" secondItem="p13-d3-qco" secondAttribute="centerX" id="4Hw-21-Tqt"/>
+                            <constraint firstItem="6py-1q-5kW" firstAttribute="top" secondItem="kc4-E5-QeM" secondAttribute="bottom" constant="20" id="9iw-X7-tDi"/>
+                            <constraint firstItem="wsL-Sl-DOa" firstAttribute="leading" secondItem="p13-d3-qco" secondAttribute="leadingMargin" constant="8" id="Agb-SV-4SR"/>
+                            <constraint firstItem="wsL-Sl-DOa" firstAttribute="top" secondItem="6py-1q-5kW" secondAttribute="bottom" constant="20" id="D6d-ZN-2tE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wsL-Sl-DOa" secondAttribute="trailing" constant="8" id="GEp-8p-c4d"/>
+                            <constraint firstItem="5uc-Xs-Ala" firstAttribute="top" secondItem="wsL-Sl-DOa" secondAttribute="bottom" constant="20" id="IRD-G8-7jc"/>
+                            <constraint firstItem="6py-1q-5kW" firstAttribute="leading" secondItem="kc4-E5-QeM" secondAttribute="leading" id="Inc-f5-EnO"/>
+                            <constraint firstItem="6py-1q-5kW" firstAttribute="centerX" secondItem="p13-d3-qco" secondAttribute="centerX" id="Y2J-V6-kzZ"/>
+                            <constraint firstItem="kc4-E5-QeM" firstAttribute="top" secondItem="kkd-a0-EcN" secondAttribute="bottom" constant="8" id="YNX-OX-1M6"/>
+                            <constraint firstItem="wsL-Sl-DOa" firstAttribute="centerX" secondItem="p13-d3-qco" secondAttribute="centerX" id="kYq-nF-5Du"/>
+                            <constraint firstItem="kc4-E5-QeM" firstAttribute="top" secondItem="kkd-a0-EcN" secondAttribute="bottom" constant="8" id="ugn-At-tbt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WF1-Ci-Scs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-572" y="-411.544227886057"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -28,7 +82,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your phone number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAw-zb-3sI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your email address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAw-zb-3sI">
                                 <rect key="frame" x="34" y="180" width="306" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -74,12 +128,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTF" destination="QI5-U0-Nen" id="2LG-9N-znQ"/>
+                        <outlet property="passwordTF" destination="pt4-M5-hzI" id="mmu-X8-0lk"/>
                         <segue destination="mgA-qF-BeE" kind="show" id="ube-vQ-Rze"/>
+                        <segue destination="lXp-RH-BcL" kind="show" identifier="RegisterVC" id="6By-Np-0sq"/>
+                        <segue destination="PxI-yw-yhw" kind="show" id="Nm1-zZ-AVV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="139.880059970015"/>
+            <point key="canvasLocation" x="-1346" y="314"/>
         </scene>
         <!--ChatVC-->
         <scene sceneID="Zfb-pi-T3m">
@@ -127,7 +185,81 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ar-bB-m8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="139.880059970015"/>
+            <point key="canvasLocation" x="390" y="315"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="HeN-gM-fdz">
+            <objects>
+                <viewController id="lXp-RH-BcL" customClass="RegisterVC" customModule="FriendlyTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SjO-bs-Pkz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mi0-Tf-qsx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Frt-cV-xAv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ReH-Qg-KSq">
+                                <rect key="frame" x="37" y="229" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your phone number. This number will never be used for other purposes than banning users who harrass other users." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-dB-wBx">
+                                <rect key="frame" x="37" y="28" width="300" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="eX2-pc-XbQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S43-Vj-EHJ">
+                                <rect key="frame" x="37" y="617" width="300" height="30"/>
+                                <state key="normal" title="Verify Phone Number"/>
+                                <connections>
+                                    <action selector="verifyBtnPressed:" destination="lXp-RH-BcL" eventType="touchUpInside" id="0LR-Yk-eVA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ob0-dB-wBx" firstAttribute="centerX" secondItem="Frt-cV-xAv" secondAttribute="centerX" id="CqS-7O-g7M"/>
+                            <constraint firstItem="ReH-Qg-KSq" firstAttribute="top" secondItem="Ob0-dB-wBx" secondAttribute="bottom" constant="61" id="F3o-8k-Qml"/>
+                            <constraint firstItem="Ob0-dB-wBx" firstAttribute="top" secondItem="SjO-bs-Pkz" secondAttribute="bottom" constant="8" symbolic="YES" id="IEk-eR-B5G"/>
+                            <constraint firstAttribute="bottom" secondItem="S43-Vj-EHJ" secondAttribute="bottom" constant="20" symbolic="YES" id="NZH-FV-OHD"/>
+                            <constraint firstItem="S43-Vj-EHJ" firstAttribute="trailing" secondItem="ReH-Qg-KSq" secondAttribute="trailing" id="SYY-Vt-CZD"/>
+                            <constraint firstItem="Ob0-dB-wBx" firstAttribute="centerX" secondItem="ReH-Qg-KSq" secondAttribute="centerX" id="WRj-If-SyG"/>
+                            <constraint firstItem="Ob0-dB-wBx" firstAttribute="leading" secondItem="Frt-cV-xAv" secondAttribute="leadingMargin" constant="21" id="nOV-aK-eyM"/>
+                            <constraint firstItem="S43-Vj-EHJ" firstAttribute="leading" secondItem="ReH-Qg-KSq" secondAttribute="leading" id="sJi-cF-m1d"/>
+                            <constraint firstItem="ReH-Qg-KSq" firstAttribute="trailing" secondItem="Ob0-dB-wBx" secondAttribute="trailing" id="uFR-zc-RPb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="exh-SR-P8n" kind="show" id="wt5-Mn-dXR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WvB-oC-mZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-571" y="1098"/>
+        </scene>
+        <!--VerifyVC-->
+        <scene sceneID="Ne5-tz-lfR">
+            <objects>
+                <viewController id="exh-SR-P8n" customClass="VerifyVC" customModule="FriendlyTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="avj-8f-TXa"/>
+                        <viewControllerLayoutGuide type="bottom" id="qp4-zg-hbb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="deG-ea-ocq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a6t-mb-OKg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="1098"/>
         </scene>
     </scenes>
 </document>

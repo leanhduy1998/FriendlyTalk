@@ -1,0 +1,6 @@
+framework module Pods_FriendlyTalk {
+  umbrella header "Pods-FriendlyTalk-umbrella.h"
+
+  export *
+  module * { export * }
+}
