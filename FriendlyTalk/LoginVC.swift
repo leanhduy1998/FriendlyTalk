@@ -40,28 +40,20 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func LoginBtnPressed(_ sender: Any) {
-        if emailTF.text?.isEmpty ?? true {
-            print("not filled")
+        if emailTF.text?.isEmpty == true {
+            Alert.showAlert(VC: self, title: "Missing email!", message: "Please enter your email!")
         }
-        else if passwordTF.text?.isEmpty ?? true {
-            print("not filled")
+        else if passwordTF.text?.isEmpty == true {
+            Alert.showAlert(VC: self, title: "Missing password!", message: "Please enter your password")
         }
         else {
-            //let phoneNumber = emailTF.text
-            
-            
-            
-            
             let email = emailTF.text
             let password = passwordTF.text
             
             FIRAuth.auth()?.signIn(withEmail: email!, password: password!) { (user, error) in
                 if let error = error{
                     if error.localizedDescription == self.badEmail {
-                        let alertController = UIAlertController(title: "Wrong email format", message:
-                            "Please enter the correct email", preferredStyle: UIAlertControllerStyle.alert)
-                        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-                        self.present(alertController, animated: true, completion: nil)
+                        Alert.showAlert(VC: self, title: "Wrong email format", message: "Please enter the correct email")
                     }
                     else if error.localizedDescription == self.notSignedUp {
                         FIRAuth.auth()?.createUser(withEmail: email!, password: password!) { (user, error) in
@@ -80,20 +72,20 @@ class LoginVC: UIViewController {
                 var ref: FIRDatabaseReference!
                 ref = FIRDatabase.database().reference().child("phoneNumber").child((FIRAuth.auth()?.currentUser?.uid)!)
                 
-                let refHandle = ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                    let phoneNumber = snapshot.value as? PhoneNumber
-                    let banned = phoneNumber?.banned
-                    let number = phoneNumber?.phoneNumber
+                _ = ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                    let phoneNumber = snapshot.value as! NSArray
+                    let banned = phoneNumber[1] as! Bool
+                    let number = phoneNumber[0] as! String
                     
-                    if number == nil {
+                    if number.isEmpty {
                         self.performSegue(withIdentifier: "RegisterVC", sender: nil)
                     }
                     else {
-                        if banned ?? true {
+                        if banned == true {
                             self.performSegue(withIdentifier: "RepealBannedVC", sender: nil)
                         }
                         else {
-                            self.performSegue(withIdentifier: "ChatVC", sender: nil)
+                            self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
                         }
                     }
                 })

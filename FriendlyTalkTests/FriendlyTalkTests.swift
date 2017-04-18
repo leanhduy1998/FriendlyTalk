@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import FriendlyTalk
 
 class FriendlyTalkTests: XCTestCase {
     
