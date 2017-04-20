@@ -28,12 +28,16 @@ class LoginVC: UIViewController {
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    @IBAction func testBtn(_ sender: Any) {
+        performSegue(withIdentifier: "ChatTableVC", sender: nil)
+    }
     private func setup(){
         handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
             // ...
         }
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,7 +61,7 @@ class LoginVC: UIViewController {
                     }
                     else if error.localizedDescription == self.notSignedUp {
                         FIRAuth.auth()?.createUser(withEmail: email!, password: password!) { (user, error) in
-                            if let error = error {
+                                if let error = error {
                                 print(error.localizedDescription)
                                 return
                             }

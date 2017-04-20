@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2461E0971EA818BA00B60E86 /* SinchVerification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; };
+		2461E0981EA818BA00B60E86 /* SinchVerification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */; };
 		2464D28F1E9D4EFB006010C7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28E1E9D4EFB006010C7 /* LoginVC.swift */; };
 		2464D2921E9D4EFB006010C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464D2901E9D4EFB006010C7 /* Main.storyboard */; };
@@ -14,14 +16,17 @@
 		2464D2971E9D4EFB006010C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2464D2951E9D4EFB006010C7 /* LaunchScreen.storyboard */; };
 		2464D2A21E9D4EFB006010C7 /* FriendlyTalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2A11E9D4EFB006010C7 /* FriendlyTalkTests.swift */; };
 		2464D2AD1E9D4EFB006010C7 /* FriendlyTalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2AC1E9D4EFB006010C7 /* FriendlyTalkUITests.swift */; };
-		2464D2C31E9DD6C3006010C7 /* ChatBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D2C21E9DD6C3006010C7 /* ChatBoardVC.swift */; };
 		248185831EA06A620017A12C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 248185821EA06A620017A12C /* GoogleService-Info.plist */; };
 		248185861EA148A40017A12C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185851EA148A40017A12C /* RegisterVC.swift */; };
 		248185A91EA1701C0017A12C /* Pods_FriendlyTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 248185A81EA1701C0017A12C /* Pods_FriendlyTalk.framework */; };
 		248185B81EA1CAD70017A12C /* VerifyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185B71EA1CAD70017A12C /* VerifyVC.swift */; };
 		248185BE1EA2B5C30017A12C /* RepealBanned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185BD1EA2B5C30017A12C /* RepealBanned.swift */; };
 		248185C21EA2F2400017A12C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185C11EA2F2400017A12C /* Alert.swift */; };
-		248185C41EA69D520017A12C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185C31EA69D520017A12C /* ChatVC.swift */; };
+		24BA27BA1EA6BADC00E0D058 /* ChatTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */; };
+		24BA27C01EA6BB6100E0D058 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */; };
+		24BA27C21EA6BB7900E0D058 /* ChatTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */; };
+		24BA27C41EA6C4E300E0D058 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27C31EA6C4E300E0D058 /* Person.swift */; };
+		24BA27C61EA8175D00E0D058 /* SinchVerification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; };
 		415BF5EF5E74D78859C64D61 /* Pods_FriendlyTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA730806F7B52CBACFC5851 /* Pods_FriendlyTalk.framework */; };
 		9DAB6343E25E0688A0C6087B /* Pods_FriendlyTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95C50A1584E27E338FD0C1 /* Pods_FriendlyTalkTests.framework */; };
 		EFA61AFA8F525AA30C773541 /* Pods_FriendlyTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881D61D7C42DE68453E35371 /* Pods_FriendlyTalkUITests.framework */; };
@@ -44,6 +49,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2461E0991EA818BB00B60E86 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2461E0981EA818BA00B60E86 /* SinchVerification.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A2D1FE030C2E93485A62107 /* Pods-FriendlyTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalk/Pods-FriendlyTalk.release.xcconfig"; sourceTree = "<group>"; };
 		0A95C50A1584E27E338FD0C1 /* Pods_FriendlyTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,14 +79,17 @@
 		2464D2A81E9D4EFB006010C7 /* FriendlyTalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendlyTalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2464D2AC1E9D4EFB006010C7 /* FriendlyTalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendlyTalkUITests.swift; sourceTree = "<group>"; };
 		2464D2AE1E9D4EFB006010C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2464D2C21E9DD6C3006010C7 /* ChatBoardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatBoardVC.swift; path = FriendlyTalk/ChatBoardVC.swift; sourceTree = "<group>"; };
 		248185821EA06A620017A12C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		248185851EA148A40017A12C /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterVC.swift; path = ../RegisterVC.swift; sourceTree = "<group>"; };
 		248185A81EA1701C0017A12C /* Pods_FriendlyTalk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_FriendlyTalk.framework; path = "../../../Library/Developer/Xcode/DerivedData/FriendlyTalk-govbmhsnvvnkjkcjigjyemosrmcy/Build/Products/Debug-iphonesimulator/Pods_FriendlyTalk.framework"; sourceTree = "<group>"; };
 		248185B71EA1CAD70017A12C /* VerifyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerifyVC.swift; path = ../VerifyVC.swift; sourceTree = "<group>"; };
 		248185BD1EA2B5C30017A12C /* RepealBanned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepealBanned.swift; sourceTree = "<group>"; };
 		248185C11EA2F2400017A12C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		248185C31EA69D520017A12C /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCell.swift; sourceTree = "<group>"; };
+		24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableVC.swift; sourceTree = "<group>"; };
+		24BA27C31EA6C4E300E0D058 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		24BA27C51EA8175D00E0D058 /* SinchVerification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SinchVerification.framework; path = "../../../Library/Developer/Xcode/DerivedData/FriendlyTalk-govbmhsnvvnkjkcjigjyemosrmcy/Build/Products/Debug-iphoneos/SinchVerification-Swift/SinchVerification.framework"; sourceTree = "<group>"; };
 		78BB8AC271BB1569EB27D851 /* Pods-FriendlyTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalkUITests/Pods-FriendlyTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		881D61D7C42DE68453E35371 /* Pods_FriendlyTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AE0D100D4A14E21D3D11A5 /* Pods-FriendlyTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalk/Pods-FriendlyTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,8 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24BA27C61EA8175D00E0D058 /* SinchVerification.framework in Frameworks */,
 				248185A91EA1701C0017A12C /* Pods_FriendlyTalk.framework in Frameworks */,
 				415BF5EF5E74D78859C64D61 /* Pods_FriendlyTalk.framework in Frameworks */,
+				2461E0971EA818BA00B60E86 /* SinchVerification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +201,7 @@
 		248185BB1EA2A3210017A12C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				24BA27C31EA6C4E300E0D058 /* Person.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -193,8 +218,9 @@
 		248185BF1EA2B5F90017A12C /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				2464D2C21E9DD6C3006010C7 /* ChatBoardVC.swift */,
-				248185C31EA69D520017A12C /* ChatVC.swift */,
+				24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */,
+				24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */,
+				24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */,
 			);
 			name = Chat;
 			path = ..;
@@ -211,6 +237,7 @@
 		85CF3B8E5036C7FC9BECAEC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24BA27C51EA8175D00E0D058 /* SinchVerification.framework */,
 				248185A81EA1701C0017A12C /* Pods_FriendlyTalk.framework */,
 				9EA730806F7B52CBACFC5851 /* Pods_FriendlyTalk.framework */,
 				0A95C50A1584E27E338FD0C1 /* Pods_FriendlyTalkTests.framework */,
@@ -245,6 +272,7 @@
 				2464D2871E9D4EFB006010C7 /* Resources */,
 				A104110A05710DEE60E28D5A /* [CP] Embed Pods Frameworks */,
 				E3C9B28CE3BB9C3BFBCFB799 /* [CP] Copy Pods Resources */,
+				2461E0991EA818BB00B60E86 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -516,8 +544,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248185C41EA69D520017A12C /* ChatVC.swift in Sources */,
-				2464D2C31E9DD6C3006010C7 /* ChatBoardVC.swift in Sources */,
+				24BA27C41EA6C4E300E0D058 /* Person.swift in Sources */,
+				24BA27C01EA6BB6100E0D058 /* ChatVC.swift in Sources */,
+				24BA27C21EA6BB7900E0D058 /* ChatTableVC.swift in Sources */,
+				24BA27BA1EA6BADC00E0D058 /* ChatTableCell.swift in Sources */,
 				2464D28F1E9D4EFB006010C7 /* LoginVC.swift in Sources */,
 				248185B81EA1CAD70017A12C /* VerifyVC.swift in Sources */,
 				2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */,
