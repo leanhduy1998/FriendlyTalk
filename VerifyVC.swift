@@ -46,7 +46,8 @@ class VerifyVC: UIViewController {
             verification.verify(codeTF.text!, completion: { (success: Bool, error:Error?) in
                 if success {
                     let ref = FIRDatabase.database().reference().child("phoneNumber").child((FIRAuth.auth()?.currentUser?.uid)!)
-                    ref.setValue([self._phoneNumber, false])
+                    ref.child("phoneNumber").setValue(self._phoneNumber)
+                    ref.child("banned").setValue(false)
                     self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
                 }
                 else {

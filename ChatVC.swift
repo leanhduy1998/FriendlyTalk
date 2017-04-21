@@ -10,8 +10,8 @@ import UIKit
 
 class ChatVC: UIViewController {
     private var _userOneName: String!
-    private var _userTwoName:String!
-    private var 
+    private var _userTwoName: String!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

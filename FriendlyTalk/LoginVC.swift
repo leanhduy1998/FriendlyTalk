@@ -72,27 +72,32 @@ class LoginVC: UIViewController {
                     
                     return
                 }
-                // if failed, already return. When not failed, continue
-                var ref: FIRDatabaseReference!
-                ref = FIRDatabase.database().reference().child("phoneNumber").child((FIRAuth.auth()?.currentUser?.uid)!)
-                
-                _ = ref.observeSingleEvent(of: .value, with: { (snapshot) in
-                    let phoneNumber = snapshot.value as! NSArray
-                    let banned = phoneNumber[1] as! Bool
-                    let number = phoneNumber[0] as! String
+                else {
+                    var ref: FIRDatabaseReference!
+                    ref = FIRDatabase.database().reference().child("phoneNumber").child((FIRAuth.auth()?.currentUser?.uid)!)
                     
-                    if number.isEmpty {
+                    _ = ref.child("phoneNumber").observeSingleEvent(of: .value, with: { (snapshot) in
+                    if !snapshot.exists() {
                         self.performSegue(withIdentifier: "RegisterVC", sender: nil)
                     }
                     else {
-                        if banned == true {
-                            self.performSegue(withIdentifier: "RepealBannedVC", sender: nil)
-                        }
-                        else {
-                            self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
-                        }
+       //                 let phoneNumber = snapshot.value as! String
+                        _ = ref.child("banned").observeSingleEvent(of: .value, with: { (snapshot2) in
+                            if snapshot2.exists(){
+                                let banned = snapshot2.value as! Bool
+                                if banned == true {
+                                    self.performSegue(withIdentifier: "RepealBannedVC", sender: nil)
+                                }
+                                else {
+                                    self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
+                                }
+                            }
+                        })
                     }
                 })
+                }
+            
+                
             }
         }
         
