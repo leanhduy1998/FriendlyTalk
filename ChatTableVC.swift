@@ -55,7 +55,7 @@ class ChatTableVC: UITableViewController,CLLocationManagerDelegate {
         }
         let updateLocationTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ChatTableVC.saveLocation), userInfo: nil, repeats: true)
         updateLocationTimer.fire()
-        let updateNearbyUsersTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(ChatTableVC.updateNearbyUsers), userInfo: nil, repeats: true)
+        let updateNearbyUsersTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(ChatTableVC.updateNearbyUsers), userInfo: nil, repeats: true)
         updateNearbyUsersTimer.fire()
     }
     func saveLocation()

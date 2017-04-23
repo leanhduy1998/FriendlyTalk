@@ -33,11 +33,24 @@ class ChatVC: UIViewController {
         }
     }
     
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
         updateTableView()
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
         // Do any additional setup after loading the view.
+    }
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
     private func setUp(){
         chatTitleLabel.text = chatTitle
@@ -45,6 +58,7 @@ class ChatVC: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         tableView.delegate = self
         tableView.dataSource = self
+        self.tableView.separatorStyle = .none
     }
     func updateTableView(){
         DataService.dataservice.getMessages(youUid: youPerson.uid) { (messagesArr) in

@@ -23,9 +23,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are banned. To repeal, please type in your repeal statement" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kc4-E5-QeM">
-                                <rect key="frame" x="35" y="28" width="305" height="126"/>
+                                <rect key="frame" x="35" y="28" width="305" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="126" id="Cw1-nz-doU"/>
+                                    <constraint firstAttribute="height" constant="80" id="Cw1-nz-doU"/>
                                     <constraint firstAttribute="width" constant="305" id="ZGA-xR-l0B"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -33,19 +33,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsL-Sl-DOa">
-                                <rect key="frame" x="24" y="617" width="327" height="30"/>
+                                <rect key="frame" x="24" y="228" width="327" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cAJ-y5-3gA"/>
+                                </constraints>
                                 <state key="normal" title="Send repeal form"/>
                                 <connections>
                                     <action selector="sendAppealBtnPressed:" destination="PxI-yw-yhw" eventType="touchUpInside" id="yAZ-I8-wDm"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6py-1q-5kW">
-                                <rect key="frame" x="35" y="174" width="305" height="423"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfW-xt-tse">
                                 <rect key="frame" x="16" y="20" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -54,6 +50,16 @@
                                     <action selector="backBtnPressed:" destination="PxI-yw-yhw" eventType="touchUpInside" id="ETk-v5-O6X"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6py-1q-5kW">
+                                <rect key="frame" x="35" y="128" width="305" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="ye3-mK-LA6"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -62,7 +68,6 @@
                             <constraint firstItem="wsL-Sl-DOa" firstAttribute="leading" secondItem="p13-d3-qco" secondAttribute="leadingMargin" constant="8" id="Agb-SV-4SR"/>
                             <constraint firstItem="wsL-Sl-DOa" firstAttribute="top" secondItem="6py-1q-5kW" secondAttribute="bottom" constant="20" id="D6d-ZN-2tE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wsL-Sl-DOa" secondAttribute="trailing" constant="8" id="GEp-8p-c4d"/>
-                            <constraint firstItem="5uc-Xs-Ala" firstAttribute="top" secondItem="wsL-Sl-DOa" secondAttribute="bottom" constant="20" id="IRD-G8-7jc"/>
                             <constraint firstItem="6py-1q-5kW" firstAttribute="leading" secondItem="kc4-E5-QeM" secondAttribute="leading" id="Inc-f5-EnO"/>
                             <constraint firstItem="6py-1q-5kW" firstAttribute="centerX" secondItem="p13-d3-qco" secondAttribute="centerX" id="Y2J-V6-kzZ"/>
                             <constraint firstItem="kc4-E5-QeM" firstAttribute="top" secondItem="kkd-a0-EcN" secondAttribute="bottom" constant="8" id="YNX-OX-1M6"/>
@@ -305,6 +310,13 @@
                                     <constraint firstAttribute="bottom" secondItem="BSG-eU-U2D" secondAttribute="bottom" constant="2" id="ggK-Ws-Fjz"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9A-Xv-HJs">
+                                <rect key="frame" x="9" y="15" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backBtnPressed:" destination="mgA-qF-BeE" eventType="touchUpInside" id="5Vd-IM-NcO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -312,9 +324,11 @@
                             <constraint firstAttribute="trailing" secondItem="BgX-1Z-xUg" secondAttribute="trailing" id="BAc-k1-a9l"/>
                             <constraint firstAttribute="trailing" secondItem="BgX-1Z-xUg" secondAttribute="trailing" id="Im9-EB-cSf"/>
                             <constraint firstItem="BgX-1Z-xUg" firstAttribute="trailing" secondItem="bXB-Cp-Uq9" secondAttribute="trailing" id="KYU-5S-dFq"/>
+                            <constraint firstItem="S9A-Xv-HJs" firstAttribute="leading" secondItem="b6q-6B-zer" secondAttribute="leading" constant="9" id="QNe-77-WRe"/>
                             <constraint firstItem="bXB-Cp-Uq9" firstAttribute="top" secondItem="OTG-At-4HZ" secondAttribute="bottom" constant="8" id="Snf-7e-cfJ"/>
                             <constraint firstItem="BgX-1Z-xUg" firstAttribute="leading" secondItem="b6q-6B-zer" secondAttribute="leading" id="SsG-t3-caR"/>
                             <constraint firstItem="OTG-At-4HZ" firstAttribute="trailing" secondItem="b6q-6B-zer" secondAttribute="trailingMargin" id="WoK-vO-dYP"/>
+                            <constraint firstItem="S9A-Xv-HJs" firstAttribute="top" secondItem="b6q-6B-zer" secondAttribute="top" constant="15" id="Won-dH-Cys"/>
                             <constraint firstItem="OTG-At-4HZ" firstAttribute="top" secondItem="ula-5U-PxX" secondAttribute="bottom" id="afT-xT-J6X"/>
                             <constraint firstItem="ydP-n7-pgD" firstAttribute="top" secondItem="BgX-1Z-xUg" secondAttribute="bottom" constant="2" id="cZq-PD-vnb"/>
                             <constraint firstItem="ydP-n7-pgD" firstAttribute="top" secondItem="BgX-1Z-xUg" secondAttribute="bottom" constant="2" id="cja-CX-Z2c"/>
