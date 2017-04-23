@@ -48,7 +48,7 @@ class VerifyVC: UIViewController {
                     let ref = FIRDatabase.database().reference().child("phoneNumber").child((FIRAuth.auth()?.currentUser?.uid)!)
                     ref.child("phoneNumber").setValue(self._phoneNumber)
                     ref.child("banned").setValue(false)
-                    self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
+                    self.performSegue(withIdentifier: "ChatTableVC", sender: nil)
                 }
                 else {
                     Alert.showAlert(VC: self, title: error?.localizedDescription, message: error?.localizedDescription)

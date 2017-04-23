@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245684991EAA31C60000FFB2 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245684981EAA31C60000FFB2 /* ChatVC.swift */; };
+		245684D71EABE0340000FFB2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245684D61EABE0340000FFB2 /* DataService.swift */; };
+		245684D91EAC05540000FFB2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245684D81EAC05540000FFB2 /* Message.swift */; };
 		2461E0971EA818BA00B60E86 /* SinchVerification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; };
 		2461E0981EA818BA00B60E86 /* SinchVerification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */; };
@@ -23,10 +26,11 @@
 		248185BE1EA2B5C30017A12C /* RepealBanned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185BD1EA2B5C30017A12C /* RepealBanned.swift */; };
 		248185C21EA2F2400017A12C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248185C11EA2F2400017A12C /* Alert.swift */; };
 		24BA27BA1EA6BADC00E0D058 /* ChatTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */; };
-		24BA27C01EA6BB6100E0D058 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */; };
 		24BA27C21EA6BB7900E0D058 /* ChatTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */; };
 		24BA27C41EA6C4E300E0D058 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BA27C31EA6C4E300E0D058 /* Person.swift */; };
 		24BA27C61EA8175D00E0D058 /* SinchVerification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24BA27C51EA8175D00E0D058 /* SinchVerification.framework */; };
+		24FC7F191EAC15D20096AB4C /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC7F181EAC15D20096AB4C /* ChatCell.swift */; };
+		24FC7F1D1EACCE790096AB4C /* PersonWithDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FC7F1C1EACCE790096AB4C /* PersonWithDistance.swift */; };
 		415BF5EF5E74D78859C64D61 /* Pods_FriendlyTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EA730806F7B52CBACFC5851 /* Pods_FriendlyTalk.framework */; };
 		9DAB6343E25E0688A0C6087B /* Pods_FriendlyTalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A95C50A1584E27E338FD0C1 /* Pods_FriendlyTalkTests.framework */; };
 		EFA61AFA8F525AA30C773541 /* Pods_FriendlyTalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 881D61D7C42DE68453E35371 /* Pods_FriendlyTalkUITests.framework */; };
@@ -66,6 +70,9 @@
 /* Begin PBXFileReference section */
 		0A2D1FE030C2E93485A62107 /* Pods-FriendlyTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalk/Pods-FriendlyTalk.release.xcconfig"; sourceTree = "<group>"; };
 		0A95C50A1584E27E338FD0C1 /* Pods_FriendlyTalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyTalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		245684981EAA31C60000FFB2 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		245684D61EABE0340000FFB2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		245684D81EAC05540000FFB2 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		2464D2891E9D4EFB006010C7 /* FriendlyTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2464D28C1E9D4EFB006010C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2464D28E1E9D4EFB006010C7 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = FriendlyTalk/LoginVC.swift; sourceTree = "<group>"; };
@@ -86,10 +93,11 @@
 		248185BD1EA2B5C30017A12C /* RepealBanned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepealBanned.swift; sourceTree = "<group>"; };
 		248185C11EA2F2400017A12C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCell.swift; sourceTree = "<group>"; };
-		24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableVC.swift; sourceTree = "<group>"; };
 		24BA27C31EA6C4E300E0D058 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		24BA27C51EA8175D00E0D058 /* SinchVerification.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SinchVerification.framework; path = "../../../Library/Developer/Xcode/DerivedData/FriendlyTalk-govbmhsnvvnkjkcjigjyemosrmcy/Build/Products/Debug-iphoneos/SinchVerification-Swift/SinchVerification.framework"; sourceTree = "<group>"; };
+		24FC7F181EAC15D20096AB4C /* ChatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		24FC7F1C1EACCE790096AB4C /* PersonWithDistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonWithDistance.swift; sourceTree = "<group>"; };
 		78BB8AC271BB1569EB27D851 /* Pods-FriendlyTalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalkUITests/Pods-FriendlyTalkUITests.release.xcconfig"; sourceTree = "<group>"; };
 		881D61D7C42DE68453E35371 /* Pods_FriendlyTalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyTalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95AE0D100D4A14E21D3D11A5 /* Pods-FriendlyTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyTalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FriendlyTalk/Pods-FriendlyTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				24BA27C31EA6C4E300E0D058 /* Person.swift */,
+				245684D81EAC05540000FFB2 /* Message.swift */,
+				24FC7F1C1EACCE790096AB4C /* PersonWithDistance.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -219,8 +229,9 @@
 			isa = PBXGroup;
 			children = (
 				24BA27B91EA6BADC00E0D058 /* ChatTableCell.swift */,
-				24BA27BF1EA6BB6100E0D058 /* ChatVC.swift */,
 				24BA27C11EA6BB7900E0D058 /* ChatTableVC.swift */,
+				245684981EAA31C60000FFB2 /* ChatVC.swift */,
+				24FC7F181EAC15D20096AB4C /* ChatCell.swift */,
 			);
 			name = Chat;
 			path = ..;
@@ -230,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				248185C11EA2F2400017A12C /* Alert.swift */,
+				245684D61EABE0340000FFB2 /* DataService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -545,15 +557,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				24BA27C41EA6C4E300E0D058 /* Person.swift in Sources */,
-				24BA27C01EA6BB6100E0D058 /* ChatVC.swift in Sources */,
+				245684D91EAC05540000FFB2 /* Message.swift in Sources */,
 				24BA27C21EA6BB7900E0D058 /* ChatTableVC.swift in Sources */,
+				245684D71EABE0340000FFB2 /* DataService.swift in Sources */,
 				24BA27BA1EA6BADC00E0D058 /* ChatTableCell.swift in Sources */,
 				2464D28F1E9D4EFB006010C7 /* LoginVC.swift in Sources */,
+				245684991EAA31C60000FFB2 /* ChatVC.swift in Sources */,
 				248185B81EA1CAD70017A12C /* VerifyVC.swift in Sources */,
 				2464D28D1E9D4EFB006010C7 /* AppDelegate.swift in Sources */,
 				248185861EA148A40017A12C /* RegisterVC.swift in Sources */,
 				248185BE1EA2B5C30017A12C /* RepealBanned.swift in Sources */,
 				248185C21EA2F2400017A12C /* Alert.swift in Sources */,
+				24FC7F191EAC15D20096AB4C /* ChatCell.swift in Sources */,
+				24FC7F1D1EACCE790096AB4C /* PersonWithDistance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

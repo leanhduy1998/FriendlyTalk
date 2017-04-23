@@ -89,7 +89,7 @@ class LoginVC: UIViewController {
                                     self.performSegue(withIdentifier: "RepealBannedVC", sender: nil)
                                 }
                                 else {
-                                    self.performSegue(withIdentifier: "ChatBoardVC", sender: nil)
+                                    self.performSegue(withIdentifier: "ChatTableVC", sender: nil)
                                 }
                             }
                         })

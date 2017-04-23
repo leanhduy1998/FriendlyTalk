@@ -1,22 +1,22 @@
 //
-//  ChatBoardCell.swift
+//  ChatCellTableViewCell.swift
 //  FriendlyTalk
 //
-//  Created by Duy Le on 4/18/17.
+//  Created by Duy Le on 4/22/17.
 //  Copyright © 2017 Andrew Le. All rights reserved.
 //
 
 import UIKit
 
-class ChatTableCell: UITableViewCell {
-    //MARK: Properties
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var photoIV: UIImageView!
-    @IBOutlet weak var distanceLabel: UILabel!
-    
-    
+class ChatCell: UITableViewCell {
+    @IBOutlet weak var profileYouIV: UIImageView!
+    @IBOutlet weak var chatYouLabel: UILabel!
+    @IBOutlet weak var chatMeLabel: UILabel!
+    @IBOutlet weak var profileMeIV: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
+    
         // Initialization code
     }
 
